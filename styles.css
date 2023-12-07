@@ -1,11 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
+
 .mainDiv {
-    border: 2px solid;
-    padding: 30px;
-    margin-top: 10%;
-    margin-left: 30%;
-    margin-right: 30%;
-    border-radius: 5px;
+    margin-top: 5%;
     text-align: center;
+    align-items: center;
 }
 footer {
     color: red;
@@ -17,20 +16,66 @@ footer {
     font-weight: 100;
     font-size: 13px;
     background-color: rgb(0, 0, 255);
+    padding-top: 2px;
 }
 html {
-    background-image: url(1.jpg);
+    background-image: url(vhs_background.gif);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 125vh;
+    height: 100vh;
     width: 100vw;
+    font-family:'Comfortaa', sans-serif;
 }
-
-body {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+video {
+    max-width: 40%;
+    z-index: 2;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-
-body::-webkit-scrollbar {
+#popup {
     display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: white;
+    font-size: 4vh;
+}
+#popup a {
+    text-decoration: none;
+    color: white;
+}
+
+footer a:link {
+    color:red;
+    text-decoration: none;
+} 
+footer a:visited {
+    color:red;
+    text-decoration: none;
+}
+footer a:hover {
+    color:red;
+    text-decoration: none;
+}
+footer a:active {
+    color:red;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .mainDiv {
+        margin-top: 40%;
+        text-align: center;
+    }
+    .mainDiv h1{
+        font-size: 1.5rem;
+    }
+    video {
+     max-width: 100%;   
+    }
+
 }
